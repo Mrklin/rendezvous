@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gilroy-bold" />
+    <title>Rendezvous</title>
+  </head>
+  <body class="w-full">
+    <header
+      class="relative min-h-[40rem] bg-[url('./assets/Sec1_img.png')] bg-black/40 hover:bg-black/30 bg-blend-multiply bg-cover bg-center w-full flex justify-start items-start gap-[17rem] flex-col p-10 sm:p-16"
+    >
+    <!-- Nav -->
+      <nav
+        class=" sm:px-[1.5rem] py-[.75rem] flex justify-between items-center gap-[20rem] w-full bg-[rgba(255,255,255,0.6)] rounded-[20px] h-[80px] text-[#432361]"
+      >
+        <div
+          class="hidden justify-between items-center min-[870px]:flex w-full font-[600]"
+        >
+          <h1 class="text-[32px] font-bold">rendezvous</h1>
+          <ul
+            class="flex justify-between items-center w-[300px] text-[1rem] cursor-pointer"
+          >
+            <li
+              class="hover:text-purple-500/90 transition-colors ease duration-500"
+            >
+              <a href="#">Discover</a>
+            </li>
+            <li
+              class="hover:text-purple-500/90 transition-colors ease duration-500"
+            >
+              <a href="#">About us</a>
+            </li>
+            <li
+              class="hover:text-purple-500/90 transition-colors ease duration-500"
+            >
+              <a href="#">FAQs</a>
+            </li>
+            <li
+              class="hover:text-purple-500/90 transition-colors ease duration-500"
+            >
+              <a href="#">Contact us</a>
+            </li>
+          </ul>
+
+          <div class="flex justify-between w-[180px] items-center gap-3">
+            <button
+              class="cursor-pointer hover:text-purple-500/90 transition-colors ease duration-500"
+            >
+              Login
+            </button>
+            <button
+              class="hover:bg-white transition-colors ease duration-500 bg-[#783EAD] rounded-[10px] h-[40px] hover:text-[#783EAD] text-white w-[100px] cursor-pointer"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center justify-between min-[869px]:hidden w-full"
+        >
+          <h1 class="text-[2rem] font-bold">rendezvous</h1>
+          <div
+            class="flex flex-col justify-center items-center hidden mt-[270px] bg-white w-[9rem] rounded-[10px] gap-3 py-5"
+          >
+            <ul
+              class="flex flex-col gap-3 justify-start items-center w-full text-[.9rem] cursor-pointer"
+            >
+              <li class="hover:bg-[#783EAD] hover:text-white">
+                <a href="#">Discover</a>
+              </li>
+              <li class="hover:bg-[#783EAD] hover:text-white">
+                <a href="#">About us</a>
+              </li>
+              <li class="hover:bg-[#783EAD] hover:text-white">
+                <a href="#">FAQs</a>
+              </li>
+              <li class="hover:bg-[#783EAD] hover:text-white">
+                <a href="#">Contact us</a>
+              </li>
+            </ul>
+            <button class="cursor-pointer hover:text-[#ffff]">Login</button>
+            <button
+              class="hover:bg-white bg-[#783EAD] rounded-[10px] h-[40px] hover:text-[#783EAD] text-white w-[100px] cursor-pointer"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="z-10 flex justify-between items-center gap-5 flex-col lg:flex-row w-full"
+      >
+        <div
+          class="text-white max-w-[25rem] lg:w-1/2 text-[24px] md:text-[32px]"
+        >
+          Ready to Rock? Discover the Hottest Events Here – Your Calendar's New
+          Best Friend!
+        </div>
+
+        <div
+          class="flex justify-between items-center bg-white h-full flex-col sm:flex-row lg:w-1/2 rounded-[20px] px-[1rem] py-[.8rem] gap-5 md:gap-[2rem]"
+        >
+          <div
+            class="flex justify-between flex-wrap sm:flex-nowrap items-center gap-2"
+          >
+            <img src="./assets/Search.svg" alt="search" />
+            <input
+              type="text"
+              placeholder="Search for an event"
+              class="outline-0 cursor-pointer"
+            />
+          </div>
+          <hr
+            class="md:rotate-0 rotate-180 rounded-[10px] bg-[#4F4F4F] w-full sm:w-[.5px] h-full"
+          />
+          <div class="flex justify-between items-center w-[8rem]">
+            <label for="choose"></label>
+            <select
+              id="choose"
+              name="choose"
+              class="w-full border-none focus:outline-none rounded-lg text-gray-700"
+            >
+              <option value="categories " disabled selected>Categories</option>
+              <option value="business">Business</option>
+              <option value="social">Social</option>
+              <option value="education">Education</option>
+              <option value="politics">Politics</option>
+              <option value="tech">Tech</option>
+            </select>
+          </div>
+          <button
+            class="hover:bg-white bg-[#783EAD] rounded-[10px] h-[40px] hover:text-[#783EAD] hover:border-1 hover:border-[#783EAD] transition-colors ease duration-500 text-white w-[100px] cursor-pointer"
+          >
+            Sign up
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="bg-white w-full select-none">
+
+      <section class="p-10 sm:p-16 flex flex-col gap-10">
+        <div class="flex justify-between flex-col sm:flex-row gap-4 items-center font-[600]">
+          <h2 class="text-[1.8rem]">Trending Event</h2>
+          <span
+            class="flex gap-1 items-end text-[#783EAD] hover:opacity-70 cursor-pointer"
+            ><p>View all trending events</p>
+            <img class="text-[#783EAD]" src="./assets/Arrow--up-right.svg" />
+          </span>
+        </div>
+
+        <!-- cards container -->
+        <div
+          class="w-full flex justify-between flex-wrap sm:flex-nowrap items-center gap-5"
+        >
+
+        <!-- card 1 -->
+          <div
+            class="sm:w-1/3 rounded-xl shadow-sm hover:shadow-xl overflow-hidden text-[.8rem] opacity-80 transition-all duration-300 hover:opacity-100 pb-6 cursor-pointer"
+          >
+            <img
+              src="./assets/Sec2_img1.png"
+              alt="life_show"
+              class="w-full object-cover"
+            />
+            <div class="bg-white flex p-5 flex-col gap-4">
+              <span class="flex flex-col gap-1">
+                <p class="text-[1rem] font-[500]">ISWIS Live show</p>
+                <div class="flex items-center gap-1">
+                  Sun, Oct 3rd
+                  <div class="inline-flex w-1 h-1 rounded-full bg-black"></div>
+                  6pm
+                </div>
+              </span>
+              <p class="font-[300] truncate md:whitespace-normal">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <a
+                href="./page2.html"
+                class="flex gap-1 cursor-pointer items-end text-[#783EAD] hover:opacity-70"
+                ><p>View details</p>
+                <img
+                  class="text-[#783EAD]"
+                  src="./assets/Arrow--up-right.svg"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="sm:w-1/3 rounded-xl shadow-sm hover:shadow-xl overflow-hidden text-[.8rem] opacity-80 transition-all duration-300 hover:opacity-100 pb-6 cursor-pointer"
+          >
+            <img
+              src="./assets/Sec2_img2.png"
+              alt="life_show"
+              class="w-full object-cover"
+            />
+            <div class="bg-white flex p-5 flex-col gap-4">
+              <span class="flex flex-col gap-1">
+                <p class="text-[1rem] font-[500]">ISWIS Live show</p>
+                <div class="flex items-center gap-1">
+                  Sun, Oct 3rd
+                  <div class="inline-flex w-1 h-1 rounded-full bg-black"></div>
+                  6pm
+                </div>
+              </span>
+              <p class="font-[300] truncate md:whitespace-normal">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <span
+                class="flex gap-1 cursor-pointer items-end text-[#783EAD] hover:opacity-70"
+                ><p>View details</p>
+                <img
+                  class="text-[#783EAD]"
+                  src="./assets/Arrow--up-right.svg"
+                />
+              </span>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="sm:w-1/3 rounded-xl shadow-sm hover:shadow-xl overflow-hidden text-[.8rem] opacity-80 transition-all duration-300 hover:opacity-100 pb-6 cursor-pointer"
+          >
+            <img
+              src="./assets/Sec2_img3.png"
+              alt="life_show"
+              class="w-full object-cover"
+            />
+            <div class="bg-white flex p-5 flex-col gap-4">
+              <span class="flex flex-col gap-1">
+                <p class="text-[1rem] font-[500]">ISWIS Live show</p>
+                <div class="flex items-center gap-1">
+                  Sun, Oct 3rd
+                  <div class="inline-flex w-1 h-1 rounded-full bg-black"></div>
+                  6pm
+                </div>
+              </span>
+              <p class="font-[300] truncate md:whitespace-normal">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <span
+                class="flex gap-1 cursor-pointer items-end text-[#783EAD] hover:opacity-70"
+                ><p>View details</p>
+                <img
+                  class="text-[#783EAD]"
+                  src="./assets/Arrow--up-right.svg"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex justify-between items-start flex-col gap-5 md:flex-row p-10 sm:p-16 w-full"
+      >
+        <div
+          class="md:w-1/3 w-full flex justify-center items-start gap-4 flex-col"
+        >
+          <h1 class="text-[1.8rem] font-500">
+            Discover a World of Events <br />
+            Tailored Just for You.
+          </h1>
+          <button
+            class="hover:bg-white bg-[#783EAD] rounded-[10px] text-[.9rem] max-w-35 py-2 px-4 hover:text-[#783EAD] hover:border-1 hover:border-[#783EAD] transition-colors ease duration-500 text-white cursor-pointer"
+          >
+            View all events
+          </button>
+        </div>
+        <div class="grid md:grid-cols-2 grid-rows-2 gap-4 w-full md:w-2/3">
+          <div
+            class="group relative bg-[url('./assets/Sec3_img1.png')] transition-all ease duration-400 bg-black/40 hover:bg-black/30 bg-blend-multiply   bg-cover bg-center flex justify-center items-center rounded-lg h-[12.7rem]"
+          >
+            <p
+              class="text-white z-10 group-hover:scale-110 text-[1.3rem] transition-all ease duration-400"
+            >
+              Online Events
+            </p>
+          </div>
+
+          <div
+            class="group relative bg-[url('./assets/Sec3_img2.png')] bg-black/40 hover:bg-black/30 bg-blend-multiply transition-all ease duration-400 bg-cover bg-center flex justify-center items-center rounded-lg h-[12.7rem]"
+          >
+            <p
+              class="text-white z-10 group-hover:scale-110 text-[1.3rem] transition-all ease duration-400"
+            >
+              Physical Events
+            </p>
+          </div>
+
+          <div
+            class="group relative bg-[url('./assets/Sec3_img3.png')] bg-black/40 hover:bg-black/30 bg-blend-multiply transition-all ease duration-400  bg-cover bg-center flex justify-center items-center rounded-lg h-[12.7rem]"
+          >
+            <p
+              class="text-white z-10 group-hover:scale-110 text-[1.3rem] transition-all ease duration-400"
+            >
+              Hybrid Events
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="flex justify-between items-start p-10 flex-col md:flex-row sm:p-16 text-white bg-[#432361] w-full gap-[3rem] md:gap-[8rem]"
+    >
+      <div class="flex flex-col gap-4 lg:w-[40rem]">
+        <h1 class="text-[2rem] font-bold">rendezvous</h1>
+        <p class="text-base font-[200]">
+          Your Personal Event Sherpa: Curating <br />
+          Awesome, One Click at a Time.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-5 sm:grid-cols-3">
+        <div class="flex justify-start items-start gap-3 flex-col">
+          <h2 class="text-xl font-bold">Features</h2>
+          <ul class="list-style-none text-base">
+            <li>Event Discovery</li>
+            <li>Ticketing</li>
+          </ul>
+        </div>
+
+        <div class="flex justify-start items-start gap-3 flex-col">
+          <h2 class="text-xl font-bold">Company</h2>
+          <ul class="list-style-none text-base">
+            <li>About us</li>
+            <li>FAQs</li>
+            <li>Career</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+        <div class="flex justify-start items-start gap-3 flex-col">
+          <h2 class="text-xl font-bold">Contact-us</h2>
+          <ul class="list-style-none text-base">
+            <li>info@events.com</li>
+            <li>+234 701 345 6789</li>
+            <li>
+              Race Course, 8/9 Marina, Onikan, Lagos Lagos, 4aa Force Rd, Lagos
+              Island 102273, Lagos
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

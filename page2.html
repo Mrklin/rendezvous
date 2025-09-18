@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gilroy-bold" />
+  </head>
+  <body class="w-full">
+    <header
+      class="w-full flex justify-start items-start gap-[17rem] flex-col py-5 px-10 sm:px-16"
+    >
+      <!-- <section
+        class="bg-black/10 z-10 inset-0 absolute mix-blend-multiply flex justify-start items-start gap-[17rem] flex-col p-[4rem] h-full w-full"
+      > -->
+      <nav
+        class="sm:px-[1.5rem] py-[.75rem] flex justify-between items-center gap-[20rem] w-full rounded-[20px] h-[80px] text-[#432361]"
+      >
+        <div
+          class="hidden justify-between items-center min-[870px]:flex w-full font-[600]"
+        >
+          <h1 class="text-[32px] font-bold">rendezvous</h1>
+          <ul
+            class="flex justify-between items-center w-[300px] text-[1rem] cursor-pointer"
+          >
+            <li
+              class="hover:text-purple-500/90 transition-colors ease duration-500"
+            >
+              <a href="#">Discover</a>
+            </li>
+            <li
+              class="hover:text-purple-500/90 transition-colors ease duration-500"
+            >
+              <a href="#">About us</a>
+            </li>
+            <li
+              class="hover:text-purple-500/90 transition-colors ease duration-500"
+            >
+              <a href="#">FAQs</a>
+            </li>
+            <li
+              class="hover:text-purple-500/90 transition-colors ease duration-500"
+            >
+              <a href="#">Contact us</a>
+            </li>
+          </ul>
+
+          <div class="flex justify-between w-[180px] items-center gap-3">
+            <button
+              class="cursor-pointer hover:text-purple-500/90 transition-colors ease duration-500"
+            >
+              Login
+            </button>
+            <button
+              class="hover:bg-white transition-colors ease duration-500 bg-[#783EAD] rounded-[10px] h-[40px] hover:text-[#783EAD] hover:border-1 hover:border-[#783EAD] text-white w-[100px] cursor-pointer"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center sm:justify-between min-[869px]:hidden w-full"
+        >
+          <h1 class="text-[2rem] font-bold ">rendezvous</h1>
+          <div
+            class="flex flex-col justify-center hidden items-center mt-[270px] bg-white w-[9rem] rounded-[10px] gap-3 py-5"
+          >
+            <ul
+              class="flex flex-col gap-3 justify-start items-center w-full text-[.9rem] cursor-pointer"
+            >
+              <li class="hover:bg-[#783EAD] hover:text-white">
+                <a href="#">Discover</a>
+              </li>
+              <li class="hover:bg-[#783EAD] hover:text-white">
+                <a href="#">About us</a>
+              </li>
+              <li class="hover:bg-[#783EAD] hover:text-white">
+                <a href="#">FAQs</a>
+              </li>
+              <li class="hover:bg-[#783EAD] hover:text-white">
+                <a href="#">Contact us</a>
+              </li>
+            </ul>
+            <button class="cursor-pointer hover:text-[#ffff]">Login</button>
+            <button
+              class="hover:bg-white bg-[#783EAD] rounded-[10px] h-[40px] hover:text-[#783EAD] text-white w-[100px] cursor-pointer"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-white w-full select-none">
+      <section class="px-10 pb-10 sm:px-16 sm:pb-30 flex flex-col gap-10">
+        <img
+          src="./assets/page2_Sec1_img1.png"
+          alt="event image"
+          class="w-full rounded-lg"
+        />
+        <div class="flex sm:justify-between flex-col gap-6 sm:flex-row items-center sm:items-end w-full">
+          <div class="flex flex-col gap-3">
+            <h2 class="text-2xl font-bold">I said what I said Live Show</h2>
+            <span class="flex flex-col gap-4 text-base text-[300]">
+              <span class="flex items-center gap-2"
+                ><img src="./assets/Calendar.svg" alt="Calendar" /> Sunday,
+                October 3rd, 2023
+                <img src="./assets/Time.svg" alt="time" class="ml-2" />
+                6PM</span
+              >
+              <span class="flex gap-2"
+                ><img src="./assets/Location.svg" alt="Location" />Race Course,
+                8/9 Marina, Onikan, Lagos Lagos, 4aa Force Rd, Lagos Island
+                102273, Lagos</span
+              >
+              <span class="flex gap-2"
+                ><img src="./assets/User.svg" alt="user" />FK, Jollz</span
+              >
+            </span>
+          </div>
+
+          <span class="flex flex-col gap-3">
+            <p class="text-base font-bold">Contact Organizers</p>
+            <span class="flex gap-3"
+              ><img
+                src="./assets/🦆 icon _circle email_.svg"
+                alt="email"
+                class="cursor-pointer transition-all duration-400 ease hover:scale-110"
+              />
+              <img
+                src="./assets/🦆 icon _rounded twitterbird_.svg"
+                alt="twitter"
+                class="cursor-pointer transition-all duration-400 ease hover:scale-110"
+              />
+              <img
+                src="./assets/Insta.svg"
+                alt="Instagram"
+                class="cursor-pointer transition-all duration-400 ease hover:scale-110"
+              />
+            </span>
+          </span>
+        </div>
+
+        <div class="flex justify-between flex-col sm:flex-row items-start gap-12">
+          <div class="text-base font-[300] flex flex-col max-w-[50rem] justify-center sm:justify-start gap-6">
+            <p class="font-bold">Event Description</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="flex flex-col gap-3">
+              <p class="font-bold">Ticket Pricing</p>
+              <span class="flex gap-10 text-base font-[300]">
+                <span>
+                  <p class="text-xl font-medium">Single</p>
+                  <p class="text-[#9B51E0] font-bold">NGN 5,000</p>
+                </span>
+                <span>
+                  <p class="text-xl font-medium">Pair</p>
+                  <p class="text-[#9B51E0] font-bold">NGN 9,000</p>
+                </span>
+              </span>
+            </div>
+            <button
+              class="hover:bg-white transition-colors ease duration-500 bg-[#783EAD] rounded-[10px] h-[50px] hover:text-[#783EAD] hover:border-1 hover:border-[#783EAD] text-white font-semibold w-[150px] cursor-pointer"
+            >
+              Buy now
+            </button>
+          </div>
+
+          <div class="flex flex-col gap-6 lg:h-[30rem]">
+            <p class="text-base font-bold">Directions</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.610715601732!2d3.4046532999999997!3d6.4440037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2154b6121d%3A0xbc4db43effc12dad!2sYoruba%20Tennis%20Club%20Onikan%20Lagos!5e0!3m2!1sen!2sng!4v1758207107425!5m2!1sen!2sng" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+            <!-- <img src="./assets/page2_Sec2_map.png" alt="map" class="h-full" /> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="flex justify-between items-start p-10 flex-col md:flex-row sm:p-16 text-white bg-[#432361] w-full gap-[3rem] md:gap-[8rem]"
+    >
+      <div class="flex flex-col gap-4 lg:w-[40rem]">
+        <h1 class="text-[2rem] font-bold">rendezvous</h1>
+        <p class="text-base font-[200]">
+          Your Personal Event Sherpa: Curating <br />
+          Awesome, One Click at a Time.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-5 sm:grid-cols-3">
+        <div class="flex justify-start items-start gap-3 flex-col">
+          <h2 class="text-xl font-bold">Features</h2>
+          <ul class="list-style-none text-base">
+            <li>Event Discovery</li>
+            <li>Ticketing</li>
+          </ul>
+        </div>
+
+        <div class="flex justify-start items-start gap-3 flex-col">
+          <h2 class="text-xl font-bold">Company</h2>
+          <ul class="list-style-none text-base">
+            <li>About us</li>
+            <li>FAQs</li>
+            <li>Career</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+        <div class="flex justify-start items-start gap-3 flex-col">
+          <h2 class="text-xl font-bold">Contact-us</h2>
+          <ul class="list-style-none text-base">
+            <li>info@events.com</li>
+            <li>+234 701 345 6789</li>
+            <li>
+              Race Course, 8/9 Marina, Onikan, Lagos Lagos, 4aa Force Rd, Lagos
+              Island 102273, Lagos
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
